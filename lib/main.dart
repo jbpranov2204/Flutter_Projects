@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Widgets/Button.dart';
 import 'package:flutter_application_2/Widgets/Container_Sized.dart';
 import 'package:flutter_application_2/Widgets/List_and_Grid.dart';
+import 'package:flutter_application_2/Widgets/SnackBar.dart';
 import 'package:flutter_application_2/Widgets/rowscols.dart';
 
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home: ListAndGrid(),
+        home: Snackbar(),
         debugShowCheckedModeBanner: false,
 
     );
