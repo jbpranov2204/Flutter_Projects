@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/Button.dart';
-import 'package:flutter_application_2/Widgets/Container_Sized.dart';
-import 'package:flutter_application_2/Widgets/List_and_Grid.dart';
-import 'package:flutter_application_2/Widgets/SnackBar.dart';
-import 'package:flutter_application_2/Widgets/rowscols.dart';
 
+import 'package:flutter_application_2/Widgets/Dismissible.dart';
 
 
 void main(){
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home: Snackbar(),
+        home: DismissibleWidget(),
         debugShowCheckedModeBanner: false,
 
     );
