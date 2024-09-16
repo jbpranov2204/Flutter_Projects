@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/Widgets/Alert.dart';
 
 import 'package:flutter_application_2/Widgets/Dismissible.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home: DismissibleWidget(),
+        home:AlertWidget(),
         debugShowCheckedModeBanner: false,
 
     );
