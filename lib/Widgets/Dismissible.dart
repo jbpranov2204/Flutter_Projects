@@ -23,11 +23,12 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
             }
             else{
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(fruits[index]),
-              backgroundColor: const Color.fromARGB(255, 9, 159, 129),));
+              backgroundColor: const Color.fromARGB(255, 25, 153, 128),));
             }
           },
           key: Key(fruit), child: ListTile(
             title: Text(fruits[index]),
+            
 
           ));
       }

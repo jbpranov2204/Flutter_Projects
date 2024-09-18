@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/Alert.dart';
 
-import 'package:flutter_application_2/Widgets/Dismissible.dart';
+import 'package:flutter_application_2/Widgets/Drawer.dart';
 
 
 void main(){
@@ -16,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       
       theme: ThemeData(
-         scaffoldBackgroundColor: const Color.fromARGB(255, 66, 164, 65),
+         scaffoldBackgroundColor: const Color.fromARGB(255, 25, 210, 93),
          
          
       ),
-        home:AlertWidget(),
+        home:DrawerWidget(),
         debugShowCheckedModeBanner: false,
 
     );
