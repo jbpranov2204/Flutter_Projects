@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_application_2/Widgets/Drawer.dart';
+import 'package:flutter_application_2/Widgets/Slidable.dart';
 
 
 void main(){
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:DrawerWidget(),
+        home:SlidableWidget(),
         debugShowCheckedModeBanner: false,
 
     );
