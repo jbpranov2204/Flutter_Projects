@@ -45,7 +45,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                       },
                       label: 'Share',
                       icon: Icons.share,
-                      backgroundColor: const Color.fromARGB(255, 196, 220, 15),
+                      backgroundColor: const Color.fromARGB(255, 192, 251, 252),
                       
                     ),
                     SlidableAction(
@@ -66,7 +66,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                       },
                       label: 'Send',
                       icon: Icons.send,
-                      backgroundColor: const Color.fromARGB(255, 32, 196, 78),
+                      backgroundColor: const Color.fromARGB(255, 192, 251, 252),
                     ),
                     SlidableAction(onPressed: (context){
                        ScaffoldMessenger.of(context)
@@ -74,7 +74,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                     },
                     label: 'Update',
                     icon: Icons.update,
-                    backgroundColor: const Color.fromARGB(255, 162, 208, 44),
+                    backgroundColor: const Color.fromARGB(255, 192, 251, 252),
                     )
                   ],
                 ),
@@ -82,7 +82,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                   padding: const EdgeInsets.all(15.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.blueAccent,
+                        color: const Color.fromARGB(255, 101, 188, 51),
                         borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
                       title: Text(_fruits[index]),

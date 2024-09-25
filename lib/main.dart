@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_application_2/Widgets/Drawer.dart';
-import 'package:flutter_application_2/Widgets/Slidable.dart';
+import 'package:flutter_application_2/Widgets/Bottom_Sheet.dart';
 
 
 void main(){
@@ -16,11 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       
       theme: ThemeData(
-         scaffoldBackgroundColor: const Color.fromARGB(255, 25, 210, 93),
+         scaffoldBackgroundColor: const Color.fromARGB(255, 249, 249, 249),
          
          
       ),
-        home:SlidableWidget(),
+        home:BottomSheetWidget(),
         debugShowCheckedModeBanner: false,
 
     );
