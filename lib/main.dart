@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/Widgets/TabBar.dart';
 import 'package:flutter_application_2/Widgets/Bottom_Sheet.dart';
+import 'package:flutter_application_2/Widgets/Slidable.dart';
 
 
 void main(){
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:BottomSheetWidget(),
+        home:TabBarWidget(),
         debugShowCheckedModeBanner: false,
 
     );
