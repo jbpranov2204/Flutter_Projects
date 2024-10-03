@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/TabBar.dart';
+import 'package:flutter_application_2/Widgets/Bottom_Navigation.dart';
+
 
 
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:const TabBarWidget(),
+        home:Bottom_Navigation(),
         debugShowCheckedModeBanner: false,
 
     );

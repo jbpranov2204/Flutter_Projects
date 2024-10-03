@@ -15,7 +15,7 @@ class ButtonWidget extends StatelessWidget {
             TextButton(
               onPressed: (){}, 
               child: const Text('press',
-              style: TextStyle(fontSize: 100),)
+              )
               )
            
           ],

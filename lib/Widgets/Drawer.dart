@@ -17,8 +17,11 @@ class DrawerWidget extends StatelessWidget {
       appBar: AppBar(title: const Text('Drawer'),),
       drawer: Drawer(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const DrawerHeader(child: 
+            Column(
+              children: [
+                const DrawerHeader(child: 
             Row(
               children: [
                 CircleAvatar(
@@ -94,9 +97,9 @@ class DrawerWidget extends StatelessWidget {
               },
               
             ),
-            const SizedBox(
-              height: 300,
+              ],
             ),
+            
                   ListTile(
               title: const Text('Log out'),
               leading: const Icon(Icons.logout),
