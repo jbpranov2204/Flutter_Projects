@@ -12,8 +12,8 @@ class TabBarWidget extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(title: Text('Tab Bar'),),
-        body: Column(
+        appBar: AppBar(title: const Text('Tab Bar'),),
+        body: const Column(
           children: [
             TabBar(
               tabs: [

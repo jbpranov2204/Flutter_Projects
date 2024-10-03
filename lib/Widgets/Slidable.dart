@@ -3,7 +3,7 @@ import 'package:flutter_application_2/Pages/About.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
 class SlidableWidget extends StatefulWidget {
-  SlidableWidget({super.key});
+  const SlidableWidget({super.key});
 
   @override
   State<SlidableWidget> createState() => _SlidableWidgetState();
@@ -16,7 +16,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Slidable'),
+          title: const Text('Slidable'),
         ),
         body: ListView.builder(
             itemCount: _fruits.length,
@@ -24,7 +24,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
               return Slidable(
                 key: ValueKey(_fruits[index]),
                 startActionPane: ActionPane(
-                  motion: StretchMotion(),
+                  motion: const StretchMotion(),
                   children: [
                     SlidableAction(
                       onPressed: (context) {
@@ -32,7 +32,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                           _fruits.removeAt(index);
                         });
                         ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Deleted Successfully')));
+                            const SnackBar(content: Text('Deleted Successfully')));
                       },
                       label: 'Delete',
                       icon: Icons.delete,
@@ -41,7 +41,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                     SlidableAction(
                       onPressed: (context) {
                         Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => About()));
+                                builder: (context) => const About()));
                       },
                       label: 'Share',
                       icon: Icons.share,
@@ -51,14 +51,14 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                     SlidableAction(
                       onPressed: (context){
                         showDialog(context: context, builder:(context){return AlertDialog(
-                          title: Text('Do you want to Cancel'),
+                          title: const Text('Do you want to Cancel'),
                           actions: [
                             TextButton(onPressed: (){
                                Navigator.pop(context);
                             ScaffoldMessenger.of(context)
-                                .showSnackBar(SnackBar(content: Text('Cancelled')));
+                                .showSnackBar(const SnackBar(content: Text('Cancelled')));
                             }, 
-                            child: Text('Cancel'))
+                            child: const Text('Cancel'))
                             
                           ],
                         );} 
@@ -70,7 +70,7 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                     ),
                     SlidableAction(onPressed: (context){
                        ScaffoldMessenger.of(context)
-                                .showSnackBar(SnackBar(content: Text('Updated')));
+                                .showSnackBar(const SnackBar(content: Text('Updated')));
                     },
                     label: 'Update',
                     icon: Icons.update,

@@ -14,11 +14,11 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Drawer'),),
+      appBar: AppBar(title: const Text('Drawer'),),
       drawer: Drawer(
         child: Column(
           children: [
-            DrawerHeader(child: 
+            const DrawerHeader(child: 
             Row(
               children: [
                 CircleAvatar(
@@ -45,64 +45,64 @@ class DrawerWidget extends StatelessWidget {
 
             )),
             ListTile(
-              title: Text('Profile'),
-              leading: Icon(Icons.person),
+              title: const Text('Profile'),
+              leading: const Icon(Icons.person),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => ProfileWidget()));
+                                builder: (context) => const ProfileWidget()));
               },
               
             ),
                   ListTile(
-              title: Text('Dash Board'),
-              leading: Icon(Icons.dashboard),
+              title: const Text('Dash Board'),
+              leading: const Icon(Icons.dashboard),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>Dashboard()));
+                                builder: (context) =>const Dashboard()));
                
               },
               
             ),
                   ListTile(
-              title: Text('Help (contact us)'),
-              leading: Icon(Icons.help),
+              title: const Text('Help (contact us)'),
+              leading: const Icon(Icons.help),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>HelpWidget()));
+                                builder: (context) =>const HelpWidget()));
                
               },
 
               
             ),
                   ListTile(
-              title: Text('History'),
-              leading: Icon(Icons.history),
+              title: const Text('History'),
+              leading: const Icon(Icons.history),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>History()));
+                                builder: (context) =>const History()));
                
               },
               
             ),
                   ListTile(
-              title: Text('About Us'),
-              leading: Icon(Icons.info),
+              title: const Text('About Us'),
+              leading: const Icon(Icons.info),
                onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>About()));
+                                builder: (context) =>const About()));
                
               },
               
             ),
-            SizedBox(
+            const SizedBox(
               height: 300,
             ),
                   ListTile(
-              title: Text('Log out'),
-              leading: Icon(Icons.logout),
+              title: const Text('Log out'),
+              leading: const Icon(Icons.logout),
                onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>Logout()));
+                                builder: (context) =>const Logout()));
                
               },
               

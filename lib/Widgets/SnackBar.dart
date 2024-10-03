@@ -14,16 +14,16 @@ class _SnackbarState extends State<Snackbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SnackBar'),
+        title: const Text('SnackBar'),
       ),
       
       body: Center(
         child: Container(
           child: ElevatedButton(onPressed: () {
-            final snackBar = SnackBar(content: Text('Process Success'));
+            const snackBar = SnackBar(content: Text('Process Success'));
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           }, 
-          child: Text('press me')),
+          child: const Text('press me')),
           
         ),
       ),

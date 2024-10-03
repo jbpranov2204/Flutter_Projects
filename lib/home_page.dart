@@ -9,7 +9,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Demo'),
+        title: const Text('Flutter Demo'),
 
       ),
 
@@ -28,7 +28,7 @@ class Homepage extends StatelessWidget {
                   title: Text(names[index]),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height :10
               )
             ],
