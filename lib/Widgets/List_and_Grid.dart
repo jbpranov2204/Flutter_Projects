@@ -8,11 +8,11 @@ class ListAndGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Grid view'),),
+      appBar: AppBar(title: const Text('Grid view'),),
       body: Container(
         child: GridView(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-        children: [
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        children: const [
           Card(
               child: ListTile(
                 title: Text('apple')

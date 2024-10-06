@@ -8,12 +8,12 @@ class BottomSheetComp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bottom Sheet'),),
+        title: const Text('Bottom Sheet'),),
 
         body: Center(
           child: ElevatedButton(onPressed: (){
             showModalBottomSheet(
-              backgroundColor: Color.fromARGB(199, 16, 218, 201),
+              backgroundColor: const Color.fromARGB(199, 16, 218, 201),
               context: context,
                builder: (context) {
               return Column(
@@ -21,47 +21,47 @@ class BottomSheetComp extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListTile(
-                     title: Text('Toyota Supra'),
+                     title: const Text('Toyota Supra'),
                      trailing: ElevatedButton(onPressed: (){
                       Navigator.pop(context);
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added Successfully')));
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Added Successfully')));
                      },
-                     child: Icon(Icons.shop)), 
+                     child: const Icon(Icons.shop)), 
                     ),
                   ),
                    Padding(
                      padding: const EdgeInsets.all(8.0),
                      child: ListTile(
-                     title: Text('GTR'),
+                     title: const Text('GTR'),
                       trailing: ElevatedButton(onPressed: (){
                         Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => DrawerWidget()));
+                                builder: (context) => const DrawerWidget()));
                       }, 
-                      child: Icon(Icons.trolley)), 
+                      child: const Icon(Icons.trolley)), 
                     ),
                    ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListTile(
-                     title: Text('Ferari'),
+                     title: const Text('Ferari'),
                       trailing: ElevatedButton(onPressed: (){
                         showDialog(context: context, builder: (context){return AlertDialog(
-                          title: Text('Are you Sure'),
+                          title: const Text('Are you Sure'),
                           actions: [
                             TextButton(onPressed: (){
                               Navigator.pop(context);
-                            }, child: Text('Cancel'))
+                            }, child: const Text('Cancel'))
                           ],
                         );
                         });
                       },
-                       child: Icon(Icons.movie)), 
+                       child: const Icon(Icons.movie)), 
                     ),
                   ),
                 ],
               );
             });
-          }, child: Text('Press For BottomSheet')),
+          }, child: const Text('Press For BottomSheet')),
         ),
       
     );

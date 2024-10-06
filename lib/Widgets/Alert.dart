@@ -9,7 +9,7 @@ class AlertWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alert Dialog'),
+        title: const Text('Alert Dialog'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -17,25 +17,25 @@ class AlertWidget extends StatelessWidget {
             showDialog(
                 context: context,
                 builder: (context) {return AlertDialog(
-                    title: Text('Are You Sure'),
+                    title: const Text('Are You Sure'),
                     actions: [
                       TextButton(onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => DismissibleWidget()));
+                                builder: (context) => const DismissibleWidget()));
                           },
-                          child: Text('Yes')),
+                          child: const Text('Yes')),
                       TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                             ScaffoldMessenger.of(context)
-                                .showSnackBar(SnackBar(content: Text('Hello')));
+                                .showSnackBar(const SnackBar(content: Text('Hello')));
                           },
-                          child: Text('Cancel'))
+                          child: const Text('Cancel'))
                     ],
                   );
                 });
           },
-          child: Text('Press for AlertDialog'),
+          child: const Text('Press for AlertDialog'),
         ),
       ),
     );

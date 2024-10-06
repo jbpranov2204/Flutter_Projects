@@ -12,7 +12,7 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Dismissible')),
+      appBar: AppBar(title: const Text('Dismissible')),
       body: ListView.builder(itemCount: fruits.length,itemBuilder: (context, index) {
         final fruit = fruits[index];
         return Dismissible(

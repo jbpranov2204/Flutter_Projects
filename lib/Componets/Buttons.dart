@@ -8,8 +8,8 @@ class CallButton extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: ElevatedButton(onPressed: (){
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Hello')));
-        }, child: Text('Press')),
+          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Hello')));
+        }, child: const Text('Press')),
       ),
     );
   }

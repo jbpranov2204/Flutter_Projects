@@ -6,7 +6,7 @@ class Logout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Log Out'),),
+      appBar: AppBar(title: const Text('Log Out'),),
     );
   }
 }

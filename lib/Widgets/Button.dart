@@ -6,7 +6,7 @@ class ButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Button'),
+      appBar: AppBar(title: const Text('Button'),
       ),
       body: Center(
         child: Column(
@@ -14,8 +14,8 @@ class ButtonWidget extends StatelessWidget {
           children: [
             TextButton(
               onPressed: (){}, 
-              child: Text('press',
-              style: TextStyle(fontSize: 100),)
+              child: const Text('press',
+              )
               )
            
           ],

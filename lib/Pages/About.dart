@@ -6,7 +6,7 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('About Us'),),
+      appBar: AppBar(title: const Text('About Us'),),
     );
   }
 }
