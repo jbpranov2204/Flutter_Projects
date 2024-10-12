@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Componets/Alert_Comp.dart';
 import 'package:flutter_application_2/Pages/BottomSheet_page.dart';
 import 'package:flutter_application_2/Pages/Slidable_Page.dart';
+import 'package:flutter_application_2/Widgets/Alert.dart';
 
 
 
@@ -23,7 +23,7 @@ class _Bottom_NavigationState extends State<Bottom_Navigation> {
   int _selectedIndex = 0;
 
   List Widgets = [
-    Alert_Comp(),
+    AlertWidget(),
     Bottomsheet_Page(),
     Slidable_Page()
 

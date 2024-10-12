@@ -1,37 +1,30 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_2/Componets/Text_Field.dart';
+import 'package:flutter_application_2/Widgets/Dismissible.dart';
 
 class Alert_Comp extends StatelessWidget {
-  const Alert_Comp({super.key});
+  Alert_Comp({super.key, required this.input});
+
+  final String input;
+  final controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Alert Dialog'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            showDialog(
-                context: context,
-                builder: (context) {return AlertDialog(
-                    title: const Text('Are You Sure'),
-                    actions: [
-                      TextButton(
-                          onPressed: () {
-                            Navigator.pop(context);
-                            ScaffoldMessenger.of(context)
-                                .showSnackBar(const SnackBar(content: Text('Hello')));
-                          },
-                          child: const Text('Cancel'))
-                    ],
-                  );
-                });
+    return AlertDialog(
+      title: Text(input),
+      content: Text_Field(hint_Text: 'Email', border_radius: 20, icondata: Icons.email, prefixiconcolor: Colors.red, controller: controller,),
+      actions: [
+        ElevatedButton(onPressed: (){
+          Navigator.pop(context);
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(controller.text),
+          action: SnackBarAction(label: 'ok', onPressed: (){
+            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => const DismissibleWidget()));
+          })));
           },
-          child: const Text('Press for AlertDialog'),
-        ),
-      ),
+         child: Text('yes'))
+      ],
     );
   }
 }
+

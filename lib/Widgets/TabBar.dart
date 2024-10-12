@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Componets/Alert_Comp.dart';
 import 'package:flutter_application_2/Componets/BottomSheet_comp.dart';
 import 'package:flutter_application_2/Componets/Buttons.dart';
+import 'package:flutter_application_2/Widgets/Alert.dart';
 
 
 class TabBarWidget extends StatelessWidget {
@@ -32,7 +32,7 @@ class TabBarWidget extends StatelessWidget {
             Expanded(
               child: TabBarView(
                 children: [
-                   CallButton(),Alert_Comp(),BottomSheetComp()
+                   CallButton(),AlertWidget(),BottomSheetComp()
                   
                 ]
               )

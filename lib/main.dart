@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/Forms.dart';
-import 'package:flutter_application_2/Widgets/TabBar.dart';
+import 'package:flutter_application_2/Widgets/Componet.dart';
 
 
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:FormWidget(),
+        home:ComponentWidget(),
         debugShowCheckedModeBanner: false,
 
     );
