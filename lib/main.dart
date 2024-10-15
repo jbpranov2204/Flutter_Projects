@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/Componet.dart';
+import 'package:flutter_application_2/Widgets/Expanded.dart';
 
 
 
@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       
       theme: ThemeData(
-         scaffoldBackgroundColor: const Color.fromARGB(255, 249, 249, 249),
+         brightness: Brightness.dark
          
          
       ),
-        home:ComponentWidget(),
+        home:ExpandedWidget(),
         debugShowCheckedModeBanner: false,
 
     );
