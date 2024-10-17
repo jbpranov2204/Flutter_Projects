@@ -30,6 +30,7 @@ class _DropDownState extends State<DropDown> {
             color: Color.fromARGB(255, 135, 128, 128),
           )),
       child: DropdownButton(
+        borderRadius: BorderRadius.zero,
         hint: widget.hint,
         padding: EdgeInsets.all(8),
         isExpanded: widget.isExpanded,

@@ -18,7 +18,7 @@ class _DropdownCompState extends State<DropdownComp> {
   @override
   Widget build(BuildContext context) {
     return DropdownButton(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.zero,
             hint: Text(widget.hinttext),
             isExpanded: widget.isExpanded,
             icon: Icon(widget.iconData),

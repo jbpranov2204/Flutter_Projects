@@ -77,6 +77,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Componets/Drop_map_comp.dart';
 
 
+
 class newDrop extends StatefulWidget {
   const newDrop({super.key});
 
@@ -97,13 +98,7 @@ class _newDropState extends State<newDrop> {
                 SizedBox(
                   height: 20,
                 ),
-                TextField(
-                  controller: nameController,
-                  decoration: InputDecoration(
-                   border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20)),
-                  ),
-                ),
+                
                 SizedBox(
                   height: 50),
                 DropDown(
