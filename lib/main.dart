@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/UI1.dart';
+import 'package:flutter_application_2/Widgets/Card.dart';
+
 
 
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:UI1(),
+        home:CardWidget(),
         debugShowCheckedModeBanner: false,
 
     );
