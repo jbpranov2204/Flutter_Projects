@@ -3,6 +3,8 @@ import 'package:flutter_application_2/Widgets/NewPage.dart';
 import 'package:flutter_application_2/Widgets/models.dart';
 
 
+
+
 class DryFruits_store extends StatelessWidget {
   DryFruits_store({super.key});
 
@@ -26,7 +28,7 @@ class DryFruits_store extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Dry Fruits Store',
+          'Dry Fruits Store'
         ),
       ),
       body: ListView.builder(

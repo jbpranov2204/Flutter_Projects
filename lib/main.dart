@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widgets/Card.dart';
 import 'package:flutter_application_2/Widgets/bot_nav.dart';
-import 'package:flutter_application_2/Widgets/dry_fruit.dart';
-import 'package:flutter_application_2/Widgets/fruits.dart';
-import 'package:flutter_application_2/Widgets/veggie_store.dart';
+
+
 
 
 
