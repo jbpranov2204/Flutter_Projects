@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/Widgets/Card.dart';
 
 
 class ListtileCustom extends StatelessWidget {
@@ -12,6 +13,10 @@ class ListtileCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: (){
+        Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) =>  CardWidget()));
+      },
       leading: CircleAvatar(
         backgroundImage: NetworkImage(ima),
         ),
