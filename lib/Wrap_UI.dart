@@ -10,7 +10,8 @@ class WrapWidget extends StatelessWidget {
       backgroundColor: Color(0xff171A1F),
       appBar: AppBar(
         backgroundColor: Color(0xff171A1F),
-        leading: Icon(Icons.arrow_back),
+        leading: Icon(Icons.arrow_back,
+        color: Colors.white),
       ),
       body: Column(
         children: [
@@ -48,7 +49,7 @@ class WrapWidget extends StatelessWidget {
                             'Business',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 248, 247, 247),
+                              color: Colors.black,
                               
                             ),
                           ),
@@ -62,7 +63,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Arts',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 252, 251, 251))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.brush
                                     ),
@@ -73,7 +74,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('History',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 250, 249, 249))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.history_edu
                                     ),
@@ -84,7 +85,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Entrepreneurship',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 248, 247, 247))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.open_with
                                     ),
@@ -95,7 +96,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Gaming',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 252, 250, 250))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -106,7 +107,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Cars',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 247, 244, 244))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -117,7 +118,7 @@ class WrapWidget extends StatelessWidget {
                             'Business',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 248, 247, 247),
+                              color: Colors.black,
                               
                             ),
                           ),
@@ -131,7 +132,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Arts',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 252, 251, 251))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.brush
                                     ),
@@ -142,7 +143,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('History',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 250, 249, 249))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.history_edu
                                     ),
@@ -153,7 +154,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Entrepreneurship',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 250, 249, 249))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -164,7 +165,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Gaming',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 248, 247, 247))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -175,7 +176,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Cars',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 241, 241, 241))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -187,7 +188,7 @@ class WrapWidget extends StatelessWidget {
                             'Business',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 248, 247, 247),
+                              color: Colors.black,
                               
                             ),
                           ),
@@ -201,7 +202,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Arts',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 252, 251, 251))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.brush
                                     ),
@@ -212,7 +213,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('History',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 250, 249, 249))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.history_edu
                                     ),
@@ -223,7 +224,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Entrepreneurship',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 252, 252, 252))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -234,7 +235,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Gaming',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 250, 249, 249))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
@@ -245,7 +246,7 @@ class WrapWidget extends StatelessWidget {
                             label: Text('Cars',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromARGB(255, 247, 245, 245))),
+                                    color: Colors.black)),
                                     avatar: Icon(
                                       Icons.work
                                     ),
