@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Whatsapp_UI/Components/New_TabBar.dart';
-import 'package:flutter_application_2/Whatsapp_UI/Pages/Mobile_Page.dart';
-import 'package:flutter_application_2/Whatsapp_UI/Pages/store.dart';
-import 'package:flutter_application_2/Widgets/TabBar.dart';
+import 'package:flutter_application_2/Wrap_UI.dart';
 
 
 
@@ -25,7 +22,7 @@ class MyApp extends StatelessWidget {
          
          
       ),
-        home:MobilePage(),
+        home:WrapWidget(),
         debugShowCheckedModeBanner: false,
 
     );
